@@ -1,9 +1,11 @@
 <h2>Controls</h2>
 <div id="maincontrols">
   <div *ngFor="let phasor of phasors">Mag: {{phasor.mag}} Frequency: {{phasor.freq}}</div>
-  <button (click)="addPhasor()">Add Phasor</button>
+  <button mat-raised-button color="primary" (click)="addPhasor()">ADD PHASOR</button>
 </div>
 
 <h2>Vizualization<h2>
+<button mat-raised-button color="primary">START</button>
 
 <!-- <router-outlet></router-outlet> -->
+
