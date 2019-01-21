@@ -1,7 +1,9 @@
-<div style="text-align:center">
-  <h1>
-    Welcome to Fourier Fun!
-  </h1>
+<h2>Controls</h2>
+<div id="maincontrols">
+  <div *ngFor="let phasor of phasors">Mag: {{phasor.mag}} Frequency: {{phasor.freq}}</div>
+  <button (click)="addPhasor()">Add Phasor</button>
 </div>
 
-<router-outlet></router-outlet>
+<h2>Vizualization<h2>
+
+<!-- <router-outlet></router-outlet> -->
